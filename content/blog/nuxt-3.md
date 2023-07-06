@@ -3,7 +3,8 @@ title: hello world!
 description: my hello world post
 date: 2023-05-23
 tags:
-  - blog
+  - nuxt
+  - vue
 ---
 
 
