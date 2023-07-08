@@ -10,16 +10,8 @@ const { data: posts } = await useAsyncData('posts', () =>
 
     Bla bla bla....
 
-    <ul>
-        <li v-for="post in posts" :key="post._id" class="my-8 py-4 border-b-2">
-            <nuxt-link :to="post._path" class="text-blue-500 text-2xl">{{ post.title }}</nuxt-link>
-            <p class="">{{ post.description }}</p>
-        </li>
-    </ul>
-
-
     <section class="grid md:grid-cols-3 mt-8 gap-10">
-
+        <Post :posts ="posts"/>
     </section>
 
 </template>
